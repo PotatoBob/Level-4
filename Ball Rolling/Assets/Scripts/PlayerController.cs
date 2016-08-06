@@ -2,14 +2,13 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-
-	// Use this for initialization
+	private Rigidbody rb;
 	void Start () {
-	
+		rb = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate() {
+		float moveHorizontal = Input.GetAxis ("Horizontal");
+		float moveVertical = Input.GetAxis ("Vertical");
+
 	}
 }
